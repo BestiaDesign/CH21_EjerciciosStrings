@@ -72,7 +72,7 @@ nombreDesor.addEventListener("click", function (event){
 });
 
 // Solución 2
-function reves(str) {
+/*  function reves(str) {
     let tempStr="";
     for (let indice = str.length - 1; indice < 0; indice--) {
         tempStr += str.charAt(indice);
@@ -80,8 +80,24 @@ function reves(str) {
     return tempStr;
 } // resultado al reves
 
-/* // Entrada
+// Entrada
 "Nancy Johanna"
 // Salida
 "annahoJ cynaN" */
+
+// Ejercicio 3
+// Palíndromo (Crear una función para que identifique si la palabra es palíndromo.)
+
+
+
+// Solución 
+/*  function esPalindromo(str) {
+        str = str.toLowerCase();
+        str = str.replaceAll(" ", "");
+       if (reves(str)==str)
+            return true;
+
+         return false
+} // Es o no Palíndromo */
+
 
