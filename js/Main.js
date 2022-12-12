@@ -88,9 +88,27 @@ nombreDesor.addEventListener("click", function (event){
 // Ejercicio 3
 // Palíndromo (Crear una función para que identifique si la palabra es palíndromo.)
 
+// Solución 1
+let palabraEscrita = document.getElementById("palabraEscrita");
+let alertResultado2 = document.getElementById("alertResultado2");
 
+palabraEscrita.addEventListener("click", function (event){
+    event.preventDefault();
 
-// Solución 
+    function inputPalabra2(str) {
+        str = str.toLowerCase();
+
+    }
+    
+    if (str != 0) {
+        alertResultado2.innerHTML = 'La palabra ' + str + 'no es Palíndromo'; 
+    }
+    else {
+        alertResultado2.innerHTML = 'La palabra ' + str + 'sí es Palíndromo'; 
+    }
+});
+
+// Solución 2
 /*  function esPalindromo(str) {
         str = str.toLowerCase();
         str = str.replaceAll(" ", "");
@@ -101,3 +119,4 @@ nombreDesor.addEventListener("click", function (event){
 } // Es o no Palíndromo */
 
 
+// Ejercicio 4
