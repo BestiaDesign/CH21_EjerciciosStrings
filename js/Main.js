@@ -53,7 +53,7 @@ alertResultado.innerHTML = 'La letra que más se repite en ' + nombre + ' es: ' 
 
 
 // Ejercicio 2
-
+// Solución 1
 let nombreDesor = document.getElementById("nombreDesor");
 let alertResultado1 = document.getElementById("alertResultado1");
 
@@ -71,7 +71,17 @@ nombreDesor.addEventListener("click", function (event){
     alertResultado1.innerHTML = 'Tú nombre al revés quedaría así: '  + nombre1;     
 });
 
+// Solución 2
+function reves(str) {
+    let tempStr="";
+    for (let indice = str.length - 1; indice < 0; indice--) {
+        tempStr += str.charAt(indice);
+    } // for indice
+    return tempStr;
+} // resultado al reves
+
 /* // Entrada
 "Nancy Johanna"
 // Salida
 "annahoJ cynaN" */
+
